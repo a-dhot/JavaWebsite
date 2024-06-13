@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>Computer Hardware Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Build Your Computer</h1>
+    </header>
+    <main>
+        <section id="hardware-selector">
+            <h2>Select Your Components</h2>
+            <form id="hardware-form">
+                <label for="cpu">CPU:</label>
+                <select id="cpu" name="cpu">
+                    <option value="0">Select CPU</option>
+                    <option value="200">Intel Core i5 - $200</option>
+                    <option value="350">Intel Core i7 - $350</option>
+                    <option value="500">Intel Core i9 - $500</option>
+                </select>
+                <br>
+                <label for="gpu">GPU:</label>
+                <select id="gpu" name="gpu">
+                    <option value="0">Select GPU</option>
+                    <option value="400">NVIDIA GTX 1660 - $400</option>
+                    <option value="600">NVIDIA RTX 2070 - $600</option>
+                    <option value="1000">NVIDIA RTX 3080 - $1000</option>
+                </select>
+                <br>
+                <label for="ram">RAM:</label>
+                <select id="ram" name="ram">
+                    <option value="0">Select RAM</option>
+                    <option value="50">8GB - $50</option>
+                    <option value="90">16GB - $90</option>
+                    <option value="150">32GB - $150</option>
+                </select>
+                <br>
+                <label for="storage">Storage:</label>
+                <select id="storage" name="storage">
+                    <option value="0">Select Storage</option>
+                    <option value="50">256GB SSD - $50</option>
+                    <option value="100">512GB SSD - $100</option>
+                    <option value="150">1TB SSD - $150</option>
+                </select>
+                <br>
+            </form>
+            <h3>Total Cost: $<span id="total-cost">0</span></h3>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
